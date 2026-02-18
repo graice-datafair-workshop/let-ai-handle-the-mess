@@ -1,0 +1,17 @@
+langgraph>=1.0.0
+langchain>=1.0.0
+langchain-openai>=1.0.0
+langchain-anthropic>=1.0.0
+langchain-aws>=1.0.0
+langchain-community
+langgraph-checkpoint-sqlite>=3.0.0
+langgraph-cli[inmem]>=0.4.0
+langsmith>=0.6.0
+jupyter>=1.0.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+numpy>=2.0.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+boto3>=1.42.0
+aiosqlite>=0.19.0

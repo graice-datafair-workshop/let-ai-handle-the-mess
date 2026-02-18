@@ -24,7 +24,7 @@ It is focused on making AI genuinely useful for data-heavy workflows.
 
 We'll build the agent using:
 
-- **Python** - Programming language
+- **[Python](https://www.python.org/)** - Programming language
 - **[LangGraph](https://www.langchain.com/langgraph)** - Agent orchestration framework
 - **[Jupyter Notebook](https://jupyter.org/)** - Interactive development environment
 
