@@ -32,9 +32,10 @@ We'll build the agent using:
 
 ### Step 1: Install Python
 
-1. Download Python 3.13.11 from the official website:
-   - Visit [Python 3.13.11 Downloads](https://www.python.org/downloads/release/python-31311/)
-   - Select the installer for your operating system
+1. Download Python 3.13 from the official website:
+   - Visit [Python 3.13 Downloads](https://www.python.org/downloads/)
+   - Select the latest **3.13.x** installer for your operating system
+   - (If you already have Python 3.12 installed, that works too)
 
 2. Install Python:
    - Run the downloaded installer
@@ -47,7 +48,7 @@ We'll build the agent using:
 3. Verify installation:
    ```bash
    python --version
-   # Expected output: Python 3.13.11
+   # Expected output: Python 3.13.x (or 3.12.x)
    ```
 
 ### Step 2: Install a Code Editor
