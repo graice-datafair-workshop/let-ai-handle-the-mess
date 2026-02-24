@@ -114,3 +114,19 @@ Start the Jupyter Lab environment:
 ```bash
 jupyter lab
 ```
+
+Alternatively, use Jupyter Notebooks:
+
+```bash
+jupyter notebook
+```
+
+## Credits
+
+**Dataset**
+
+[Inside Airbnb](https://insideairbnb.com/)
+
+**Agent framework**
+
+[LangGraph](https://www.langchain.com/langgraph)
