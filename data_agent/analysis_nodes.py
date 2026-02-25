@@ -57,7 +57,7 @@ def generate_analysis_prompt(state: CombinedAgentState) -> dict:
     response = llm.invoke(meta_prompt)
     generated_prompt = response.content
 
-    print(f"\n🧠 Generated analysis prompt ({len(generated_prompt)} chars)")
+    print(f"\nGenerated analysis prompt ({len(generated_prompt)} chars)")
 
     return {"generated_analysis_prompt": generated_prompt}
 
@@ -180,7 +180,7 @@ def choose_analysis_task(state: CombinedAgentState) -> dict:
 
 def execute_analysis(state: CombinedAgentState) -> dict:
     """Execute the LLM-decided analysis across all files."""
-    print(f"\n🔬 Executing: {state['analysis_task']['task_name']}...")
+    print(f"\nExecuting: {state['analysis_task']['task_name']}...")
 
     file_col = "source_file"
     task = state['analysis_task']

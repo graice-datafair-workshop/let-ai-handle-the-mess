@@ -153,7 +153,7 @@ def infer_current_column_type(state: CombinedAgentState) -> dict:
             }
 
     # Normal inference path (first file or column not in stored decisions)
-    print(f"\n🔍 [File {current_file_idx + 1}] Analyzing column {current_col_idx + 1}/{len(column_names)}: '{column_name}'")
+    print(f"\n[File {current_file_idx + 1}] Analyzing column {current_col_idx + 1}/{len(column_names)}: '{column_name}'")
 
     df = file_state['working_df']
 
@@ -281,7 +281,7 @@ def ask_user_feedback(state: CombinedAgentState) -> dict:
             'prompt': f"What type should '{column_name}' be? (or approve '{col_info['inferred_type']}')"
         })
 
-        print(f"\n🤖 Interpreting your response: '{user_response}'...")
+        print(f"\nInterpreting your response: '{user_response}'...")
         interpretation = interpret_user_response(
             str(user_response), column_name, col_info['inferred_type'], col_info['sample_values']
         )
@@ -336,7 +336,7 @@ def apply_transformations(state: CombinedAgentState) -> dict:
     file_path = files_to_process[current_file_idx]
     file_state = state['file_states'][file_path]
 
-    print(f"\n🔧 Applying transformations to file {current_file_idx + 1}/{len(files_to_process)}: {Path(file_path).name}")
+    print(f"\nApplying transformations to file {current_file_idx + 1}/{len(files_to_process)}: {Path(file_path).name}")
 
     df = file_state['working_df'].copy()
     log_messages = []

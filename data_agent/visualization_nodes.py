@@ -119,7 +119,7 @@ def choose_visualization(state: CombinedAgentState) -> dict:
     viz_options = state.get("visualization_options", [])
 
     if not viz_options:
-        print("⚠️ No visualization options available — skipping choice.")
+        print("No visualization options available — skipping choice.")
         return {}
 
     options_display = []
@@ -340,8 +340,8 @@ def export_results(state: CombinedAgentState) -> dict:
 
     # Display the visualization
     if state.get('visualization_figure'):
-        print(f"\n🎨 VISUALIZATION: {state['visualization_task']['title']}")
-        print(f"   Why this matters: {state['visualization_task']['rationale']}")
+        print(f"\nVISUALIZATION: {state['visualization_task']['title']}")
+        print(f"Why this matters: {state['visualization_task']['rationale']}")
 
         img_data = base64.b64decode(state['visualization_figure'])
         ipy_display(IPImage(data=img_data))
@@ -359,7 +359,7 @@ def export_results(state: CombinedAgentState) -> dict:
     # Display processing log
     processing_log = state.get('processing_log', [])
     if processing_log:
-        print(f"\n🧹 PROCESSING LOG ({len(processing_log)} entries)")
+        print(f"\nPROCESSING LOG ({len(processing_log)} entries)")
         for log_entry in processing_log[:8]:
             print(f"   {log_entry}")
         if len(processing_log) > 8:
