@@ -1,6 +1,6 @@
 # Let AI Handle the Mess: Agentic Data Analysis
 
-​gr.ai.ce × DATA_FAIR | Ljubljana
+[​gr.ai.ce](https://devrev.ai/graice) × [DATA_FAIR](https://datafair.si/) | Ljubljana
 
 ​gr.ai.ce is back with another hands-on, no-fluff AI workshop, this time with a sharper focus on data that actually does things.
 
@@ -32,8 +32,14 @@ We'll build the agent using:
 
 ### Step 1: Install Python
 
+> [!CAUTION]
+> **Python 3.14 (the latest version) is NOT supported!**
+> Some of the packages we use in this workshop do not yet support Python 3.14. Please use **Python 3.13** or **3.12**.
+>
+> If you already have Python 3.14 installed, see [Step 4](#step-4-set-up-virtual-environment) for instructions on creating a virtual environment with an older Python version.
+
 1. Download Python 3.13 from the official website:
-   - Visit [Python 3.13 Downloads](https://www.python.org/downloads/)
+   - Visit [Python Downloads](https://www.python.org/downloads/)
    - Select the latest **3.13.x** installer for your operating system
    - (If you already have Python 3.12 installed, that works too)
 
@@ -99,6 +105,34 @@ python -m venv venv
 
 You should see `(venv)` in your terminal prompt when activated.
 
+> [!IMPORTANT]
+> **Already have Python 3.14 installed and don't want to uninstall it?**
+>
+> You can install Python 3.13 alongside 3.14 and create the virtual environment with the older version:
+>
+> 1. Download and install [Python 3.13](https://www.python.org/downloads/) (keep your existing 3.14 installation)
+>    - **Windows:** You don't need to add it to PATH. The **Python Launcher (`py`)** is installed by default and can find all installed Python versions automatically. Just make sure the "py launcher" checkbox stays checked in the installer.
+>
+> 2. Create the virtual environment using the 3.13 interpreter explicitly:
+>
+>    **macOS/Linux:**
+>    ```bash
+>    python3.13 -m venv venv
+>    source venv/bin/activate
+>    ```
+>
+>    **Windows:**
+>    ```bash
+>    py -3.13 -m venv venv
+>    .\venv\Scripts\activate
+>    ```
+>
+> 3. Verify you're using the correct version inside the venv:
+>    ```bash
+>    python --version
+>    # Expected output: Python 3.13.x
+>    ```
+
 ### Step 5: Install Required Libraries
 
 Install all necessary Python packages:
@@ -125,8 +159,8 @@ jupyter notebook
 
 **Dataset**
 
-[Inside Airbnb](https://insideairbnb.com/)
+- [Inside Airbnb](https://insideairbnb.com/)
 
 **Agent framework**
 
-[LangGraph](https://www.langchain.com/langgraph)
+- [LangGraph](https://www.langchain.com/langgraph)
