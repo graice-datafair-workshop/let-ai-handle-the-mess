@@ -28,6 +28,10 @@ We'll build the agent using:
 - **[LangGraph](https://www.langchain.com/langgraph)** - Agent orchestration framework
 - **[Jupyter Notebook](https://jupyter.org/)** - Interactive development environment
 
+### To see the full 'solution' code, check out the [solved](https://github.com/graice-datafair-workshop/let-ai-handle-the-mess/tree/solved) branch.
+
+### Check out the code from our previous workshop [here](https://github.com/klub-ada/izdelaj-svojega-ai-agenta).
+
 ## 💻 Installation Guide
 
 ### Step 1: Install Python
@@ -141,7 +145,15 @@ Install all necessary Python packages:
 pip install -r requirements.txt
 ```
 
-### Step 6: Launch Jupyter Lab
+### Step 6: Add your Amazon Bedrock API key
+
+In a **.env** file, save your Amazon Bedrock API key. LangGraph can also work with OpenAI or Anthropic APIs, you will have to modify the code slightly to make it work with your model/API of choice.
+
+```bash
+AWS_BEARER_TOKEN_BEDROCK=your_api_key_here
+```
+
+### Step 7: Launch Jupyter Lab
 
 Start the Jupyter Lab environment:
 
